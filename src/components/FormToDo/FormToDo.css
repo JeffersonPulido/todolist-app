@@ -54,3 +54,26 @@
     border: 1px solid rgba(128, 128, 128, 0.767);
     transition: .2s ease-in-out
 }
+
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    .formContainer{
+        width: 80%;
+    }
+}
+
+/* DESKTOP BIG*/
+@media (min-width: 1800px) {
+
+}
+
+/* TABLET */
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .formContainer{
+        width: 80%;
+    }
+    .file-input{
+        padding: 2%;
+    }
+}

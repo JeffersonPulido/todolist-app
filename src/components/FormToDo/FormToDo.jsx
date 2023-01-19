@@ -9,8 +9,6 @@ export const FormToDo = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
-    console.log(description)
     
     handleAddItem({
       done: false,
@@ -26,7 +24,7 @@ export const FormToDo = props => {
       <form className='formContainer' onSubmit={handleSubmit}>
         <div className='todo-list'>
           <div className='file-input'>
-            <input type="text" className='text' value={description} onChange={e => setDescription(e.target.value)}/>
+            <input minLength="5" maxLength="60" size="60" type="text" className='text' value={description} onChange={e => setDescription(e.target.value)}/>
             <button className='button pink' disabled={description ? "" : "disabled"}>+</button>
           </div>
         </div>

@@ -1,0 +1,52 @@
+.todo-Divlist{
+    background-color: white;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    padding: 12px 0px 12px 0px;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    flex-direction: column;
+}
+
+.buttonD{
+    background: var(--coloraccesorios);
+    color: var(--colorletra);
+    font-weight: 600;
+    padding: 1%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5vh;
+    transition: .2s ease-in-out
+}
+.buttonD:hover{
+    background-color: var(--colorhover);
+    color: var(--coloraccesorios);
+    transition: .2s ease-in-out
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    .todo-Divlist{
+        width: 80%;
+    }
+    .buttonD{
+        padding: 2%;
+    }
+}
+
+/* DESKTOP BIG*/
+@media (min-width: 1800px) {
+
+}
+
+/* TABLET */
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .buttonD{
+        padding: 2%;
+    }
+}

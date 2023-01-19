@@ -25,3 +25,21 @@
     color: var(--colorletra);
     text-shadow: 3px 4px 5px var(--colorhover);
 }
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    .containerTitle {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+}
+
+/* DESKTOP BIG*/
+@media (min-width: 1800px) {
+
+}
+
+/* TABLET */
+@media screen and (min-width: 767px) and (max-width: 1023px){
+
+}

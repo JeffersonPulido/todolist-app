@@ -1,5 +1,6 @@
 import React from 'react'
 import { Checkbox } from '../Checkbox/Checkbox'
+import './TaskList.css'
 
 
 export const TaskList = props => {
@@ -26,12 +27,12 @@ export const TaskList = props => {
 
   return (
     <>
-      <div className='todo-list'>
+      <div className='todo-Divlist'>
         {list.length ? chk : "No hay tareas!"}
         {list.length ? (
           <p>
-            <button className='button blue' onClick={onClickRemoveItem}>
-              Eliminar todo
+            <button className='buttonD blue' onClick={onClickRemoveItem}>
+              Eliminar tareas completas
             </button>
           </p>
         ) : null}
