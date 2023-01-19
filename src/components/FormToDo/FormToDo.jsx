@@ -1,13 +1,29 @@
 import React, { useState } from 'react'
 import './FormToDo.css'
 
-export const FormToDo = () => {
+export const FormToDo = props => {
 
-  const [description, setDescription] = useState("")
+  const [description, setDescription] = useState("");
+
+  const { handleAddItem } = props;
+
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    console.log(description)
+    
+    handleAddItem({
+      done: false,
+      id: (+new Date()).toString(),
+      description
+    })
+
+    setDescription("")
+  }
 
   return (
     <>
-      <form className='formContainer'>
+      <form className='formContainer' onSubmit={handleSubmit}>
         <div className='todo-list'>
           <div className='file-input'>
             <input type="text" className='text' value={description} onChange={e => setDescription(e.target.value)}/>
