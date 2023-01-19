@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+
+.containerInit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerTitle{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.titleInit{
+    letter-spacing: 2.5px;
+    font-weight: 900;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    position: relative;
+    color: var(--colorletra);
+    text-shadow: 3px 4px 5px var(--colorhover);
+}

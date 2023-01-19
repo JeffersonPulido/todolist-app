@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,900;1,400&display=swap');
+
+:root{
+    --bkcolor: #535353;
+    --bkcontraste: #232323;
+    --bkcolorlight: #bdadad;
+    --coloraccesorios: #00214b;
+    --colorhover: #74a6e7;
+    --colorletra: #ffffff;
+}
+
+.bkGral{
+    height: 100vh;
+    background-image: url("../src/assets/images/AnimatedBg.svg");
+}
